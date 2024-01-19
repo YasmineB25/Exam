@@ -39,6 +39,6 @@ public class UtilitaireTest {
         assertEquals(11, resultat);
     }
 
-    // Ajoutez d'autres tests en fonction de vos besoins
+    
 
 }

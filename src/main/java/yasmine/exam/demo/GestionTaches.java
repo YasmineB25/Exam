@@ -29,6 +29,15 @@ public class GestionTaches {
     public List<Tache> getListeTaches() {
         return listeTaches;
     }
+
+    public Tache getTacheParNom(String nomTache) throws TacheInexistanteException {
+        for (Tache tache : listeTaches) {
+            if (tache.getTitre().equals(nomTache)) {
+                return tache;
+            }
+        }
+        throw new TacheInexistanteException("La tâche avec le nom '" + nomTache + "' n'existe pas.");
+    }
     private Tache trouverTacheParTitre(String titre) throws TacheInexistanteException {
         for (Tache tache : listeTaches) {
             if (tache.getTitre().equals(titre)) {
