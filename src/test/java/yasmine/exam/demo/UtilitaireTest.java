@@ -37,8 +37,7 @@ public class UtilitaireTest {
         //la tache avec une duree négative doit étre ignorée
         int resultat = Utilitaire.calculerDureeTotale(taches);
         assertEquals(11, resultat);
-    }
-
     
+    }
 
 }
